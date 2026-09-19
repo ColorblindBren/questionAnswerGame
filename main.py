@@ -28,12 +28,12 @@ nodeBrain = {
 #==============================================================================#
 
 def readFileToNodeBrain():
-    filePath = open('json.txt', 'r')
+    filePath = open('saveFile.json', 'r')
     nodeBrain = json.load(filePath)
     filePath.close()
 
 def writeNodeBrainToFile():
-    filePath = open('json.txt', 'w')
+    filePath = open('saveFile.json', 'w')
     json.dump(nodeBrain,filePath)
     filePath.close()
 
